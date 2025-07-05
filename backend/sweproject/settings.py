@@ -31,7 +31,8 @@ DEBUG = os.environ.get('DEBUG', false)
 
 ALLOWED_HOSTS = [
     'localhost',
-    'twilio-webapp-demo.onrender.com'
+    'twilio-webapp-demo.onrender.com',
+    'twilio-webapp-demo-1.onrender.com',
 ]
 
 # Application definition
