@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer components{
+    
+    .keyboard button
+    {
+        @apply relative flex items-center justify-center text-2xl px-6 py-3.5
+            transition-all duration-500 rounded
+            active:scale-95 active:duration-[0s] active:bg-secondary active:text-white 
+        ;
+    }
+
+    .input_field
+    {
+        @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+    }
+    .h-20 {
+        height: 3rem !important;
+    }
+    
+}

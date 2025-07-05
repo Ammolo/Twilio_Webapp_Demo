@@ -1,0 +1,5 @@
+firstName,lastName,age,gender,email,phone,address,zipcode
+John,Doe,30,M,johndoe@example.com,1234567890,123 Main St,12345
+Jane,Smith,25,F,janesmith@example.com,9876543210,456 Elm St,54321
+Michael,Johnson,40,M,michaeljohnson@example.com,4561237890,789 Oak St,67890
+Emily,Davis,35,F,emilydavis@example.com,3216549870,321 Pine St,45678
