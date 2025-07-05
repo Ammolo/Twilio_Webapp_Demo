@@ -1,6 +1,6 @@
-*.sqlite3
 *.log
 *.pyc
+*.env
 __pycache__
 .DS_Store
 .vscode/*
