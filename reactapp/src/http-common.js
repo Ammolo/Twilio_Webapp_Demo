@@ -3,7 +3,7 @@ import axios from "axios";
 // Axios factorized configuration
 const instance = axios.create({
 	// Url used for the backedn calls
-	baseURL: "http://localhost:8000",
+	baseURL: "https://twilio-webapp-demo.onrender.com",
 
 	// The headers to include for all calls
 	headers: {
