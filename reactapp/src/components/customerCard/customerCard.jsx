@@ -2,6 +2,8 @@ import React, { Component} from 'react';
 
 import axios from "axios";
 
+const BACKEND_LINK = "https://twilio-webapp-demo.onrender.com"
+
 export default class CustomerCardComponenet extends Component
 { 
     
@@ -26,7 +28,7 @@ export default class CustomerCardComponenet extends Component
 
     /** fucntion to send a get request to retrieve next customer */
     loadData = () => {                
-        axios.get('http://localhost:8000/card/getCC',{
+        axios.get(BACKEND_LINK + "/card/getCC",{
             headers:{
                 "ngrok-skip-browser-warning": "true"
               }
@@ -44,7 +46,7 @@ export default class CustomerCardComponenet extends Component
     }
 
     sendData = (type) => {        
-        let path = 'http://localhost:8000/card/import'
+        let path = BACKEND_LINK + '/card/import'
 
         const data = new FormData();
 

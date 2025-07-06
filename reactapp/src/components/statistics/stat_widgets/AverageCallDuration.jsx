@@ -9,7 +9,7 @@ const AverageCallDuration = ({ period_selection }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/call/statistics/', {
+        const response = await axios.get('http://:https://twilio-webapp-demo.onrender.com/call/statistics/', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('access_token')}`
           },
