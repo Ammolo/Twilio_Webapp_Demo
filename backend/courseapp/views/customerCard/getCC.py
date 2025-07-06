@@ -9,6 +9,7 @@ from courseapp.models import CustomerInfo
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+@csrf_exempt
 def GetCC(request):
     if request.method == 'GET':
         #Get the next customer with Pending status        

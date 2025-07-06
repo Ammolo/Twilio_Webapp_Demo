@@ -7,7 +7,7 @@ from courseapp.models import CustomerInfo
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-
+@csrf_exempt
 def getInfo(request):
     if request.method == 'GET':
         
