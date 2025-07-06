@@ -44,7 +44,7 @@ export default class CustomerCardComponenet extends Component
     }
 
     sendData = (type) => {        
-        let path = "https://twilio-webapp-demo.onrender.com/card/getCC"
+        let path = "https://twilio-webapp-demo.onrender.com/card/import"
 
         const data = new FormData();
 
