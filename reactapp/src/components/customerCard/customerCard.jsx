@@ -51,7 +51,6 @@ export default class CustomerCardComponenet extends Component
         //Post file to SQL database in backend
         const headers = {
             'Content-Type': 'multipart/form-data',
-            'withCredentials': true
         }
         
         /** checks if file or form has been passed */
