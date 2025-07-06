@@ -2,8 +2,6 @@ import React, { Component} from 'react';
 
 import axios from "axios";
 
-const BACKEND_LINK = "https://twilio-webapp-demo.onrender.com"
-
 export default class CustomerCardComponenet extends Component
 { 
     
@@ -28,7 +26,7 @@ export default class CustomerCardComponenet extends Component
 
     /** fucntion to send a get request to retrieve next customer */
     loadData = () => {                
-        axios.get(BACKEND_LINK + "/card/getCC",{
+        axios.get("https://twilio-webapp-demo.onrender.com/card/getCC",{
             headers:{
                 "ngrok-skip-browser-warning": "true"
               }
@@ -46,7 +44,7 @@ export default class CustomerCardComponenet extends Component
     }
 
     sendData = (type) => {        
-        let path = BACKEND_LINK + '/card/import'
+        let path = "https://twilio-webapp-demo.onrender.com/card/getCC"
 
         const data = new FormData();
 
@@ -56,7 +54,7 @@ export default class CustomerCardComponenet extends Component
         }
         
         /** checks if file or form has been passed */
-        if (type.target.name == 'csv'){
+        if (type.target.name === 'csv'){
             /** appends the data from the file that user uploaded */
             data.append('csv', this.file)
         } else {

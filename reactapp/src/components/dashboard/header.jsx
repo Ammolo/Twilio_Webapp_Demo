@@ -1,13 +1,9 @@
 import React from 'react';
-import CallComponent from '../call/call';
 import DialerComponent from '../helpers/dialer';
 import axios from 'axios';
 
 import {
-  PhoneIcon,
   PhoneXMarkIcon,
-  MicrophoneIcon,
-  ArrowLeftIcon,
 } from '@heroicons/react/24/solid'
 
 import Timer from '../helpers/timer';
